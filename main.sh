@@ -10,4 +10,10 @@
 #     echo "Unknwon branch"
 # fi
 
-echo "Hello ${username:-default}"
+# echo "Hello ${username:-default}"
+
+if [ -d f1 ] && [ -f a.txt ]; then
+    echo "Yes"
+else
+    echo "No"
+fi
