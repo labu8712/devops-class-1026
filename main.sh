@@ -26,18 +26,32 @@
 #     echo "失敗"
 # fi
 
-for i in {1..5}; do
-    echo $i
+# for i in {1..5}; do
+#     echo $i
+# done
+
+# echo "=========="
+
+# for i in a b c d e f g; do
+#     echo $i
+# done
+
+# echo "=========="
+
+# for i in `ls`; do
+#     echo $i
+# done
+
+count=1
+while [ $count -le 5 ]; do
+    echo "Count: ${count}"
+    count=$((count + 1))
 done
 
 echo "=========="
 
-for i in a b c d e f g; do
-    echo $i
-done
-
-echo "=========="
-
-for i in `ls`; do
-    echo $i
+count=1
+until [ $count -gt 5 ]; do
+    echo "Count ${count}"
+    count=$((count+1))
 done
