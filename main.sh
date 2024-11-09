@@ -1,5 +1,5 @@
 #!/bin/bash
 
-name="Amy"
+read -p "Enter you name: " name
 
 echo "Hello ${name}"
