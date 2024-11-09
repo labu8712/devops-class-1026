@@ -18,10 +18,26 @@
 #     echo "No"
 # fi
 
-mkdir -p f2/f3
+# mkdir -p f2/f3
 
-if [ $? -eq 0 ]; then
-    echo "成功"
-else
-    echo "失敗"
-fi
+# if [ $? -eq 0 ]; then
+#     echo "成功"
+# else
+#     echo "失敗"
+# fi
+
+for i in {1..5}; do
+    echo $i
+done
+
+echo "=========="
+
+for i in a b c d e f g; do
+    echo $i
+done
+
+echo "=========="
+
+for i in `ls`; do
+    echo $i
+done
