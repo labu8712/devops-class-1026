@@ -12,8 +12,16 @@
 
 # echo "Hello ${username:-default}"
 
-if [ -d f1 ] && [ -f a.txt ]; then
-    echo "Yes"
+# if [ -d f1 ] && [ -f a.txt ]; then
+#     echo "Yes"
+# else
+#     echo "No"
+# fi
+
+mkdir -p f2/f3
+
+if [ $? -eq 0 ]; then
+    echo "成功"
 else
-    echo "No"
+    echo "失敗"
 fi
