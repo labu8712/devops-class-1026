@@ -1,0 +1,20 @@
+services:
+  server1:
+    image: nginx:1.27
+    ports:
+      - 8080:80
+    volumes:
+      - data:/srv/mydata
+      - ./hello.html:/usr/share/nginx/html/index.html:ro
+    environment:
+      USERNAME: okokokko
+
+  server2:
+    image: nginx:1.27
+    ports:
+      - 8088:80
+    volumes:
+      - data:/srv/mydata
+
+volumes:
+  data:
