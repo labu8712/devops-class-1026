@@ -10,7 +10,7 @@ services:
       USERNAME: okokokko
 
   server2:
-    image: nginx:1.27
+    image: hello-nginx:1.27
     ports:
       - 8088:80
     volumes:
